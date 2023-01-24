@@ -84,7 +84,7 @@ label {
   display: none;
 }
 .tree__checkbox:checked + label:before {
-  background-image: url("/images/folder-open.svg");
+  background-image: url("../images/folder-open.svg");
 }
 .tree__checkbox:checked + label + .tree__branches {
   display: block;
@@ -94,7 +94,7 @@ label {
   align-items: center;
 }
 .tree__checkbox + label:before {
-  background-image: url("/images/folder.svg");
+  background-image: url("../images/folder.svg");
 }
 
 .tree__branches {
@@ -110,7 +110,7 @@ label {
   display: flex;
 }
 .tree__file:before {
-  background-image: url("/images/file.svg");
+  background-image: url("../images/file.svg");
 }
 
 /*# sourceMappingURL=main.css.map */

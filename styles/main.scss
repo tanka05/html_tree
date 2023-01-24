@@ -12,7 +12,7 @@
   display: none;
   &:checked {
     & + label:before {
-      background-image: url("/images/folder-open.svg");
+      background-image: url("../images/folder-open.svg");
     }
 
     & + label +.tree__branches {display: block;}
@@ -24,7 +24,7 @@
 
     &:before {
       @extend %tree_icon;
-      background-image: url("/images/folder.svg");
+      background-image: url("../images/folder.svg");
     }
   }
 }
@@ -41,6 +41,6 @@
   display: flex;
   &:before {
     @extend %tree_icon;
-    background-image: url("/images/file.svg");
+    background-image: url("../images/file.svg");
   }
 }
