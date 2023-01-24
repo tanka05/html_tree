@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tree</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <ul class="tree">
+        <li class="tree__item">
+            <input id="folder1" type="checkbox" class="tree__checkbox" checked>
+            <label for="folder1">Folder 1</label>
+            <ul class="tree__branches">
+                <li>
+                    <span class="tree__file">Item 1.1</span>
+                </li>
+            </ul>
+        </li>
+
+        <li class="tree__item">
+            <input id="folder2" type="checkbox" class="tree__checkbox" checked>
+            <label for="folder2">Folder 2</label>
+            <ul class="tree__branches">
+                <li>
+                    <input id="folder2-1" type="checkbox" class="tree__checkbox" checked>
+                    <label for="folder2-1">Subfolder 2.1</label>
+                    
+                    <ul class="tree__branches">
+                        <li>
+                            <span class="tree__file">File 2.1.1</span>
+                        </li>
+                        <li>
+                            <span class="tree__file">File 2.2.1</span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="tree__file">File 2.2</span>
+                </li>
+            </ul>
+        </li>
+
+        <li class="tree__item">
+            <input id="folder3" class="tree__checkbox" type="checkbox">
+            <label for="folder3">Folder 3</label>
+            <ul class="tree__branches">
+                <li>
+                    <span class="tree__file">Item 3.1</span>
+                </li>
+            </ul>
+        </li>
+
+        <li class="tree__item">
+            <span class="tree__file">File 4</span>
+        </li>
+    </ul>
+</body>
+</html>

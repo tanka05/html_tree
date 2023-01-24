@@ -1,0 +1,46 @@
+@import "clear";
+@import "extends";
+
+.tree {
+  margin: 40px;
+  font: 16px/1.2 sans-serif;
+}
+
+.tree__item {margin-bottom: 8px;}
+
+.tree__checkbox {
+  display: none;
+  &:checked {
+    & + label:before {
+      background-image: url("/images/folder-open.svg");
+    }
+
+    & + label +.tree__branches {display: block;}
+  }
+
+  & + label {
+    display: inline-flex;
+    align-items: center;
+
+    &:before {
+      @extend %tree_icon;
+      background-image: url("/images/folder.svg");
+    }
+  }
+}
+
+.tree__branches {
+  display: none;
+  margin-top: 8px;
+  padding-left: 28px;
+
+  li {margin-bottom: 8px;}
+}
+
+.tree__file {
+  display: flex;
+  &:before {
+    @extend %tree_icon;
+    background-image: url("/images/file.svg");
+  }
+}
